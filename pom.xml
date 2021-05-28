@@ -8,13 +8,8 @@
 		<module>service</module>
 		<module>repository</module>
 		<module>web</module>
-		<module>email</module>
-		<module>email</module>
-        <module>email</module>
-		<module>email</module>
-		<module>email-api</module>
-		<module>email</module>
 		<module>email-app</module>
+
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,7 +25,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<start-class>main.HMSApplication</start-class>
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -44,25 +41,12 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
