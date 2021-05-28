@@ -5,7 +5,6 @@ import com.javatechie.mailservice.EmailService;
 import com.javatechie.model.doctor.Doctor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.stream.Collectors;
